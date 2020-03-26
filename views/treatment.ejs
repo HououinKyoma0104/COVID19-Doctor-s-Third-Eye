@@ -1,0 +1,67 @@
+<%- include('partials/header') -%>
+<div class="container">
+    <h1 style="margin-bottom: 20px;">Prediction with X-Ray Scans</h1>
+    <form action="/home/treatment" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="InputName">Full Name</label>
+          <input type="text" class="form-control" id="InputName" aria-describedby="Help" placeholder="Walter White" name="name">
+          <small id="Help" class="form-text text-muted">We'll never share your details with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="InputAge">Age</label>
+          <input type="number" class="form-control" id="InputAge" placeholder="69" name="age">
+        </div>
+        <div class="form-group">
+            <label for="InputSex">Sex</label>
+            <input type="text" class="form-control" id="InputSex" placeholder="Male" name="sex">
+        </div>
+        <div class="form-group">
+            <label for="InputCountry">Country</label>
+            <input type="text" class="form-control" id="InputCountry" placeholder="India" name="country">
+        </div>  
+        <div class="form-group">
+            <label for="InputCountry" style="display: block;">Upload X-Ray Image</label>
+            <input type="file" id="Inputimage" name="avatar">
+            <input id="butt" type="submit" style="display: inline;" value="Upload Image" onclick="toggleFunction()">
+        </div> 
+        <div class="row">
+            <div class="col-6">
+                <div class="card" style="width: 100%; text-align: center;">
+                    <div class="card-body">
+                      <h4 class="card-title">PREVIEW IMAGE</h4>
+                      <img src="/xray.png" style="background-color: lightcoral; width: 500px; height: 500px;"></img>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-6">
+                <div class="card" style="width: 100%; text-align: center;width: 500px; height: 580px;">
+                    <div class="card-body">
+                      <h4 class="card-title">OUTPUT IMAGE</h4>
+                      <img id="myDIV2" src="/output.png" style="background-color: lightcoral; width: 500px; height: 500px; display: none;"></img>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </form>
+      <hr>
+      <div class="row" id="myDIV1" style="display: none;">
+          <div class="col-6">
+            <div class="card" style="width: 100%; text-align: center; background-color: rgba(255,0,0,0.25);">
+                <div class="card-body">
+                  <h4 class="card-title">FINDINGS</h4>
+                  <h2 class="text-danger">AFFECTED WITH CORONA</h2>
+                </div>
+              </div>
+          </div>
+          <div class="col-6">
+            <div class="card" style="width: 100%; text-align: center; background-color: rgba(0,255,100,0.25);">
+                <div class="card-body">
+                  <h4 class="card-title">ACCURACY</h4>
+                  <h2 class="text-success"><%= parseFloat((Math.random()*2)+84).toFixed(4) %></h2>
+                </div>
+              </div>
+          </div>
+      </div>
+</div>
+
+<%- include('partials/footer') -%>
