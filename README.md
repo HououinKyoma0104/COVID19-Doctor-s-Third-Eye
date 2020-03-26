@@ -15,7 +15,7 @@ In this project we are using CNN (Convolutional Neural Network) to study the str
 ```
 * `npm install` will install all the dependancies in the package.json file
 * We have not included all the files from the `Train` folder because of the file limit in github.
-* Therefore, We are also includeing a drive link:
+* Therefore, We are also including a drive link:
 [Click here for google drive link](https://drive.google.com/open?id=1GR0UcqLpIOKNJeYO77vyDep70XuTaKy8)
 
 ### Contributors
