@@ -22,5 +22,4 @@ In this project we are using CNN (Convolutional Neural Network) to study the str
 
 |SrNo | Name         | Email                           |
 |-----|--------------|---------------------------------|
-|1    |Atharva Kokate|atharvakokate07@gmail.com        |
 |2    |Hariharan R S |hariharanr.s2018@vitstudent.ac.in| 
